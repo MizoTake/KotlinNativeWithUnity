@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00615D30236F466800A6CBD1 /* libnativeWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00615D2F236F466800A6CBD1 /* libnativeWrapper.cpp */; };
+		00615D42237694DB00A6CBD1 /* libnative.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 00615D2A236F459A00A6CBD1 /* libnative.dylib */; };
+		00615D43237694DB00A6CBD1 /* libnative.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 00615D2A236F459A00A6CBD1 /* libnative.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		00615D46237699ED00A6CBD1 /* libnative_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 00615D45237699EC00A6CBD1 /* libnative_api.h */; };
+		00615D5C23779BCB00A6CBD1 /* KotlinNativeWrapperTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00615D5B23779BCB00A6CBD1 /* KotlinNativeWrapperTest.mm */; };
+		0081F6152377A29500F05CCF /* libnative.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 00615D2A236F459A00A6CBD1 /* libnative.dylib */; };
+		0081F6162377A2D300F05CCF /* libnativeWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 00615D2E236F466800A6CBD1 /* libnativeWrapper.h */; };
+		0081F6172377A4C100F05CCF /* libnative_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 00615D45237699EC00A6CBD1 /* libnative_api.h */; };
+		0081F6182377A4CE00F05CCF /* libnativeWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 00615D2E236F466800A6CBD1 /* libnativeWrapper.h */; };
+		0081F6192377A4EF00F05CCF /* libnativeWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00615D2F236F466800A6CBD1 /* libnativeWrapper.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00615D44237694DB00A6CBD1 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00615D43237694DB00A6CBD1 /* libnative.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00615D20236F436400A6CBD1 /* KotlinNativeWrapperForMac.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotlinNativeWrapperForMac.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		00615D23236F436400A6CBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00615D2A236F459A00A6CBD1 /* libnative.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libnative.dylib; path = ../KotlinNativePlugin/build/bin/native/releaseShared/libnative.dylib; sourceTree = "<group>"; };
+		00615D2E236F466800A6CBD1 /* libnativeWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libnativeWrapper.h; path = ../../KotlinNativeWrapper/KotlinNativeWrapper/libnativeWrapper.h; sourceTree = "<group>"; };
+		00615D2F236F466800A6CBD1 /* libnativeWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = libnativeWrapper.cpp; path = ../../KotlinNativeWrapper/KotlinNativeWrapper/libnativeWrapper.cpp; sourceTree = "<group>"; };
+		00615D45237699EC00A6CBD1 /* libnative_api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libnative_api.h; path = ../../KotlinNativePlugin/build/bin/native/releaseShared/libnative_api.h; sourceTree = "<group>"; };
+		00615D5923779BCB00A6CBD1 /* KotlinNativeWrapperTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotlinNativeWrapperTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00615D5B23779BCB00A6CBD1 /* KotlinNativeWrapperTest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KotlinNativeWrapperTest.mm; sourceTree = "<group>"; };
+		00615D5D23779BCB00A6CBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00615D1D236F436400A6CBD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00615D42237694DB00A6CBD1 /* libnative.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00615D5623779BCB00A6CBD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0081F6152377A29500F05CCF /* libnative.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00615D17236F436400A6CBD1 = {
+			isa = PBXGroup;
+			children = (
+				00615D22236F436400A6CBD1 /* KotlinNativeWrapperForMac */,
+				00615D5A23779BCB00A6CBD1 /* KotlinNativeWrapperTest */,
+				00615D21236F436400A6CBD1 /* Products */,
+				00615D29236F459A00A6CBD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00615D21236F436400A6CBD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00615D20236F436400A6CBD1 /* KotlinNativeWrapperForMac.bundle */,
+				00615D5923779BCB00A6CBD1 /* KotlinNativeWrapperTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00615D22236F436400A6CBD1 /* KotlinNativeWrapperForMac */ = {
+			isa = PBXGroup;
+			children = (
+				00615D45237699EC00A6CBD1 /* libnative_api.h */,
+				00615D2F236F466800A6CBD1 /* libnativeWrapper.cpp */,
+				00615D2E236F466800A6CBD1 /* libnativeWrapper.h */,
+				00615D23236F436400A6CBD1 /* Info.plist */,
+			);
+			path = KotlinNativeWrapperForMac;
+			sourceTree = "<group>";
+		};
+		00615D29236F459A00A6CBD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00615D2A236F459A00A6CBD1 /* libnative.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00615D5A23779BCB00A6CBD1 /* KotlinNativeWrapperTest */ = {
+			isa = PBXGroup;
+			children = (
+				00615D5B23779BCB00A6CBD1 /* KotlinNativeWrapperTest.mm */,
+				00615D5D23779BCB00A6CBD1 /* Info.plist */,
+			);
+			path = KotlinNativeWrapperTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00615D36236FA28D00A6CBD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00615D46237699ED00A6CBD1 /* libnative_api.h in Headers */,
+				0081F6162377A2D300F05CCF /* libnativeWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0081F6112377A14700F05CCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0081F6182377A4CE00F05CCF /* libnativeWrapper.h in Headers */,
+				0081F6172377A4C100F05CCF /* libnative_api.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00615D1F236F436400A6CBD1 /* KotlinNativeWrapperForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00615D26236F436400A6CBD1 /* Build configuration list for PBXNativeTarget "KotlinNativeWrapperForMac" */;
+			buildPhases = (
+				00615D36236FA28D00A6CBD1 /* Headers */,
+				00615D1C236F436400A6CBD1 /* Sources */,
+				00615D1D236F436400A6CBD1 /* Frameworks */,
+				00615D1E236F436400A6CBD1 /* Resources */,
+				00615D44237694DB00A6CBD1 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KotlinNativeWrapperForMac;
+			productName = KotlinNativeWrapperForMac;
+			productReference = 00615D20236F436400A6CBD1 /* KotlinNativeWrapperForMac.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		00615D5823779BCB00A6CBD1 /* KotlinNativeWrapperTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00615D5E23779BCB00A6CBD1 /* Build configuration list for PBXNativeTarget "KotlinNativeWrapperTest" */;
+			buildPhases = (
+				0081F6112377A14700F05CCF /* Headers */,
+				00615D5523779BCB00A6CBD1 /* Sources */,
+				00615D5623779BCB00A6CBD1 /* Frameworks */,
+				00615D5723779BCB00A6CBD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KotlinNativeWrapperTest;
+			productName = KotlinNativeWrapperTest;
+			productReference = 00615D5923779BCB00A6CBD1 /* KotlinNativeWrapperTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00615D18236F436400A6CBD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = MizoTake;
+				TargetAttributes = {
+					00615D1F236F436400A6CBD1 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					00615D5823779BCB00A6CBD1 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 00615D1B236F436400A6CBD1 /* Build configuration list for PBXProject "KotlinNativeWrapperForMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00615D17236F436400A6CBD1;
+			productRefGroup = 00615D21236F436400A6CBD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00615D1F236F436400A6CBD1 /* KotlinNativeWrapperForMac */,
+				00615D5823779BCB00A6CBD1 /* KotlinNativeWrapperTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00615D1E236F436400A6CBD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00615D5723779BCB00A6CBD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00615D1C236F436400A6CBD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00615D30236F466800A6CBD1 /* libnativeWrapper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00615D5523779BCB00A6CBD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0081F6192377A4EF00F05CCF /* libnativeWrapper.cpp in Sources */,
+				00615D5C23779BCB00A6CBD1 /* KotlinNativeWrapperTest.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00615D24236F436400A6CBD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		00615D25236F436400A6CBD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		00615D27236F436400A6CBD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KotlinNativeWrapperForMac/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../KotlinNativePlugin/build/bin/native/releaseShared";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fdeclspec",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MizoTake.KotlinNativeWrapperForMac;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		00615D28236F436400A6CBD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KotlinNativeWrapperForMac/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../KotlinNativePlugin/build/bin/native/releaseShared";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fdeclspec",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MizoTake.KotlinNativeWrapperForMac;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		00615D5F23779BCB00A6CBD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KotlinNativeWrapperTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../KotlinNativePlugin/build/bin/native/releaseShared";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fdeclspec",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MizoTake.KotlinNativeWrapperTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		00615D6023779BCB00A6CBD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KotlinNativeWrapperTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../KotlinNativePlugin/build/bin/native/releaseShared";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fdeclspec",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.MizoTake.KotlinNativeWrapperTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00615D1B236F436400A6CBD1 /* Build configuration list for PBXProject "KotlinNativeWrapperForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00615D24236F436400A6CBD1 /* Debug */,
+				00615D25236F436400A6CBD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00615D26236F436400A6CBD1 /* Build configuration list for PBXNativeTarget "KotlinNativeWrapperForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00615D27236F436400A6CBD1 /* Debug */,
+				00615D28236F436400A6CBD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00615D5E23779BCB00A6CBD1 /* Build configuration list for PBXNativeTarget "KotlinNativeWrapperTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00615D5F23779BCB00A6CBD1 /* Debug */,
+				00615D6023779BCB00A6CBD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00615D18236F436400A6CBD1 /* Project object */;
+}

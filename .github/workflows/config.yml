@@ -1,0 +1,33 @@
+name: kotlin native with unity
+
+on: [push]
+
+jobs:
+  build-unix:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@master
+      - name: Run assemble
+        run: |
+          cd KotlinNativePlugin
+          chmod +x ./gradlew
+          ./gradlew assemble
+      - uses: actions/upload-artifact@master
+        with:
+          name: build artifacts
+          path: KotlinNativePlugin/build/
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Run assemble
+        run: |
+          cd KotlinNativePlugin
+          ./gradlew.bat assemble
+      - uses: actions/upload-artifact@master
+        with:
+          name: build artifacts
+          path: KotlinNativePlugin/build/

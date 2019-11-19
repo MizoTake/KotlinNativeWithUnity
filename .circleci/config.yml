@@ -1,0 +1,36 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: roamingthings/kotlin-native:latest
+    environment:
+      JVM_OPTS: -Xmx3200m
+    steps:
+      - checkout
+      # - restore_cache:
+      #     key: jars-{{ checksum "~/project/KotlinNativePlugin/build.gradle" }}
+      # - run:
+      #     name: Gradle Initialize
+      #     command: |
+      #       cd ~/project/KotlinNativePlugin
+      #       chmod +x ./gradlew
+      #       ./gradlew init
+      # - save_cache:
+      #     paths:
+      #       - ~/project/KotlinNativePlugin/.gradle
+      #     key: jars-{{ checksum "~/project/KotlinNativePlugin/build.gradle" }}
+      # - run:
+      #     name: Run assemble
+      #     command: |
+      #       cd ~/project/KotlinNativePlugin
+      #       ./gradlew assemble
+      # - store_artifacts:
+      #     path: ~/project/KotlinNativePlugin/build/
+      #     destination: build artifacts
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build

@@ -1,0 +1,6 @@
+framework module KotlinNativePlugin {
+    umbrella header "KotlinNativePlugin.h"
+
+    export *
+    module * { export * }
+}
